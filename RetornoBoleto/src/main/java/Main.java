@@ -9,9 +9,11 @@ public class Main {
         var processarBoletosBradesco = new LeituraRetornoBradesco();
         var uriBB = Main.class.getResource("banco-brasil-1.csv").toURI();
         var uriB = Main.class.getResource("bradesco-1.csv").toURI();
-        System.out.println("------------------- BANCO DO BRASIL -------------------");
+        System.out.println();
+        System.out.println(" BANCO DO BRASIL ");
         processarBoletos.processar(uriBB);
-        System.out.println("------------------- BRADESCO -------------------");
+        System.out.println();
+        System.out.println(" BRADESCO ");
         processarBoletosBradesco.processar(uriB);
     }
 
